@@ -1,0 +1,5 @@
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    justify-content: flex-end!important;
+    flex-basis: auto;
+    }
