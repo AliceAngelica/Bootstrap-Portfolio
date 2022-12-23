@@ -3,3 +3,12 @@
     justify-content: flex-end!important;
     flex-basis: auto;
     }
+
+header h1 {
+    text-align: center;
+
+}
+
+header p {
+    width: 50%;
+}
