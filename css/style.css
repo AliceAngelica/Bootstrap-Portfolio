@@ -4,11 +4,26 @@
     flex-basis: auto;
     }
 
-header h1 {
+header #title {
+    width: 65%;
     text-align: center;
+    font-weight: 600;
+    color: white;
 
 }
 
 header p {
-    width: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    width: 65%;
+    text-align: center;
+}
+
+header .jumbotron {
+    height: 735px;
+}
+
+progress1 {
+    width: 100%;
 }
