@@ -7,11 +7,12 @@
     <title>Bootstrap Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../Bootstrap-Portfolio/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Nav bar, with links that send you to each part of the page-->
     <section>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex">
              <!--can put container here-->
              <div class="container">
               <a class="navbar-brand" href="#">My Portfolio</a>
@@ -24,10 +25,10 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">My Work</a>
+                  <a class="nav-link" href="#">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">My Skills</a>
+                  <a class="nav-link" href="#">Skills</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact</a>
@@ -41,56 +42,125 @@
 <!--Jumbotron, showing a picture of me, my name and other info-->
 <header>
     <div class="jumbotron jumbotron-fluid" style="background-image: url(../Bootstrap-Portfolio/images/meInItalyCompressed.jpeg); background-size: 100%;"><br>
-      <br><h1 class="col-lf-11 display-4" id="title"><br>Welcome to my Portfolio</h1><br>
-      <p class="lead">&nbsp; Hello! My name is Alice and this is my Portfolio made with Bootstrap. I hope you enjoy checking out my projects and getting to know me.</p><br>
-      <p class="lead">
+      <br><h1 class="col-lf-11 display-4 text-center text-white" id="title"><br>Welcome to my Portfolio</h1><br>
+      <p class="lead text-center text-white">&nbsp; Hello! My name is Alice and this is my Portfolio made with Bootstrap. I hope you enjoy checking out my projects and getting to know me.</p><br>
+      <p class="lead text-center text-white">
          <a class="btn btn-light btn-lg" href="#" role="button">About Me</a>
       </p>
 </div>
 </header>
 
      <!--Skills section - list of things you expect to learn-->
-<section class="container">
-    <div class="">
-        <h1 class="">My Skills</h1><br>
-        
-        <p class="">So far I have learned an abundance of information, and I look forward to learning more each day.
-            <ul>I have learned:
-                <li>HTML: Semantic and non semantic HTML. I have also learned form inputs and tables.</li>
-                <li>CSS: I have learned the box model, and its alternative (border-box). I have learned about classes and ids, and I have learned many types of selectors.</li>
-                <li>Flexbox (CSS): I have learned how to manipulate the positioning of elements using Flexbox.</li>
-                <li>CSS Grid: I have learned some of the basics of CSS grid.</li>
-                <li>Bootstrap: I am currently learning the fundementals of Bootstrap, and I enjoy using it!</li>
-                <li>JavaScript: I have looked into the basics of JavaScript, but I do not currently know how to use it. I am looking forward to learning it!</li>
-                <li>React JS: This is a JavaScript framework, I currently do not know how to use it.</li>
+     
+     <!--<h2 class="skillsHeading text-center">My Skills</h2><br>
+<section class="containerSkills d-flex flex-row justify-content-around">
+    <p class="skillsInfo">So far I have learned an abundance of information, and I look forward to learning more each day.<br>
+        Currently I am working on learning CSS frameworks, but very shortly I will begin learning JavaScript.<br>
+        Below is a list of what I am learning, what I have learned, and what I plan to learn.</p>
+            <ul>
+                <li><span class="skills">HTML</span><br>I have learned semantic and non semantic HTML. I have also learned form inputs and tables.</li>
+                <li><span class="skills">CSS</span><br> I have learned the box-model, and its alternative (border-box). I have learned about classes and ids, and I have learned many types of selectors.</li>
+                <li><span class="skills">Flexbox (CSS)</span><br> I have learned how to manipulate the positioning of elements using Flexbox.</li>
+                <li><span class="skills">CSS Grid</span><br> I have learned some of the basics of CSS grid.</li>
+                <li><span class="skills">Bootstrap</span><br> I am currently learning the fundementals of Bootstrap, and I will continue to learn how to use it.</li>
+                <li><span class="skills">JavaScript</span><br> I have looked into the basics of JavaScript, but I do not currently know how to use it. I am planning on starting to learn it very soon.</li>
+                <li><span class="skills">React JS</span><br> This is a JavaScript framework that I intend to learn.</li>
             </ul><br>
-        </p>
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">React</div>
-          </div><br>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
-          </div><br>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="Bootstrap" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
-          </div><br>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">CSS</div>
-          </div><br>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">HTML</div>
-          </div>
+            </div>
+        <div class="row" id="progressContainer">
+            <div class="progress w-1000">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">React</div>
+
+              </div>
+          
+        </div>
           <br>
     </div>
 </section>
+<br>
+<hr>-->
+<div class="container">
+    <h2 class="my-4 text-center" id="skillsHeading">My Skills</h2><br>
 
-<!--My Work in a grid, with each project image in a card. The card should include an image and short description-->
-          <section class="container">
-            <div class="row d-flex justify-content-around mt-8">
-                <h1 class="my-4">My Work</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate molestias reprehenderit, ea fugiat accusamus quisquam sed incidunt! Blanditiis odit, ipsum ab facere impedit alias dolor, consequuntur laudantium reiciendis, magnam repellendus. Eligendi commodi odit quas harum eius accusamus minus aliquid?</p><br>
+    <div class="row d-flex flex-row align-items-center">
+        <div class="col-lg-4 ">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <rect width="100%" height="100%" fill="#777"></rect>
+            </svg>
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur explicabo placeat, eligendi dolor veritatis adipisci nam beatae facilis voluptatem!</p>
+
+            
+        </div>
+        
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur explicabo placeat, eligendi dolor veritatis adipisci nam beatae facilis voluptatem!</p>
+        
             </div>
-        </section>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur explicabo placeat, eligendi dolor veritatis adipisci nam beatae facilis voluptatem!</p>
+        
+            </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!---My Work in a grid, with each project image in a card. The card should include an image and short description-->
+          
+<section class="container">
+    <div class="row d-flex justify-content-around mt-8">
+        <h2 class="my-4 text-center">My Work</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate molestias reprehenderit, ea fugiat accusamus quisquam sed incidunt! Blanditiis odit, ipsum ab facere impedit alias dolor, consequuntur laudantium reiciendis, magnam repellendus. Eligendi commodi odit quas harum eius accusamus minus aliquid?</p><br>
+    </div>
+    <class=“row justify-content-between text-centre mt-8”>
+    <div class=“col-lg-5 mx-auto mb-4”>
+        <div class=“card”>
+        <img src=“../im” class=“”>
+    <div class=“card-body”>
+    <h4>Project 1 </h4>
+        <p class=“card-text”>lore ipsum30
+    </div>
+    <div class=“card-footer”>
+    <a href=“” class=“btn btw-primary”>lorem ipsum</a>
+    </div>
+</div>
+</div>
+
+<class=“row justify-content-between text-centre mt-8”>
+    <div class=“col-lg-5 mx-auto mb-4”>
+        <div class=“card”>
+        <img src=“loremipsum.png” class=“”>
+    <div class=“card-body”>
+    <h4>Project 1 </h4>
+        <p class=“card-text”>lore ipsum30
+    </div>
+    <div class=“card-footer”>
+    <a href=“” class=“btn btw-primary”>lorem ipsum</a>
+    </div>
+</div>
+
+</section>
 
 
     <!--About me/ contact section-->

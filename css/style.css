@@ -1,29 +1,66 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navbar-expand-lg .navbar-collapse {
-    display: flex!important;
     justify-content: flex-end!important;
     flex-basis: auto;
     }
 
 header #title {
     width: 65%;
-    text-align: center;
     font-weight: 600;
-    color: white;
 
 }
 
 header p {
-    color: white;
     font-weight: 700;
     font-size: 24px;
     width: 65%;
-    text-align: center;
 }
 
 header .jumbotron {
     height: 735px;
 }
 
-progress1 {
+h2 {
+    margin-top: 80px;
+    text-decoration: 2px solid grey overline;
+    text-transform: uppercase;
+}
+
+.skills {
+    font-weight: bold;
+    text-decoration: 2px solid grey underline;
+}
+
+.skillsInfo {
+margin-left: 40px;
+}
+
+.skillsInfo::first-letter {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    width: 50%;
+}
+
+.progress {
+    margin-left: 30px;
     width: 100%;
+    float: right;
+}
+
+.containerSkills {
+    align-content: center;
+    border: 2px solid black;
+}
+
+#progressContainer {
+    border: 2px solid black;
+    width: 550px;
+    height: 60px;
 }
