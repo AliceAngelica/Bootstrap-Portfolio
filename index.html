@@ -20,15 +20,15 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
              <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#">Welcome <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Work</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact</a>
@@ -42,8 +42,9 @@
 <!--Jumbotron, showing a picture of me, my name and other info-->
 <header>
     <div class="jumbotron jumbotron-fluid" style="background-image: url(../Bootstrap-Portfolio/images/meInItalyCompressed.jpeg); background-size: 100%;"><br>
-      <br><h1 class="col-lf-11 display-4 text-center text-white" id="title"><br>Welcome to my Portfolio</h1><br>
-      <p class="lead text-center text-white">&nbsp; Hello! My name is Alice and this is my Portfolio made with Bootstrap. I hope you enjoy checking out my projects and getting to know me.</p><br>
+
+      <h1 class="col-lg-11 display-4 text-center text-white" id="title"><br>Welcome to my Portfolio</h1><br>
+      <p class="lead text-center text-white">&nbsp; Hello! My name is Alice and this is my Portfolio made with Bootstrap.<br> I hope you enjoy checking out my projects and getting to know me.</p><br>
       <p class="lead text-center text-white">
          <a class="btn btn-light btn-lg" href="#" role="button">About Me</a>
       </p>
@@ -82,86 +83,171 @@
 </section>
 <br>
 <hr>-->
-<div class="container">
-    <h2 class="my-4 text-center" id="skillsHeading">My Skills</h2><br>
+<sectiom class="container">
+    <h2 class="my-4 text-center" id="mySkills">My Skills</h2><br>
 
-    <div class="row d-flex flex-row align-items-center">
+    <div class="row">
         <div class="col-lg-4 ">
             <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
                 <rect width="100%" height="100%" fill="#777"></rect>
             </svg>
             <h2>Heading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur explicabo placeat, eligendi dolor veritatis adipisci nam beatae facilis voluptatem!</p>
-
-            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur explicabo placeat, eligendi dolor veritatis adipisci nam beatae facilis voluptatem!</p>           
+            <p><a class="btn btn-secondary" href="#" role="button">Read More</a></p>
         </div>
         
-            <div class="row">
                 <div class="col-lg-4">
                     <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
                         <rect width="100%" height="100%" fill="#777"></rect>
                     </svg>
                     <h2>Heading</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur explicabo placeat, eligendi dolor veritatis adipisci nam beatae facilis voluptatem!</p>
-        
+                    <p><a class="btn btn-secondary" href="#" role="button">Read More</a></p>
             </div>
 
-            <div class="row">
                 <div class="col-lg-4">
                     <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
                         <rect width="100%" height="100%" fill="#777"></rect>
                     </svg>
                     <h2>Heading</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur explicabo placeat, eligendi dolor veritatis adipisci nam beatae facilis voluptatem!</p>
-        
+                    <p><a class="btn btn-secondary" href="#" role="button">Read More</a></p>
             </div>
+        </div>
+     </div>
+    </div>
 
-
-</div>
-
-
-
-
-
-
-
-
+</section>
 <!---My Work in a grid, with each project image in a card. The card should include an image and short description-->
           
 <section class="container">
     <div class="row d-flex justify-content-around mt-8">
         <h2 class="my-4 text-center">My Work</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate molestias reprehenderit, ea fugiat accusamus quisquam sed incidunt! Blanditiis odit, ipsum ab facere impedit alias dolor, consequuntur laudantium reiciendis, magnam repellendus. Eligendi commodi odit quas harum eius accusamus minus aliquid?</p><br>
     </div>
-    <class=“row justify-content-between text-centre mt-8”>
-    <div class=“col-lg-5 mx-auto mb-4”>
-        <div class=“card”>
-        <img src=“../im” class=“”>
-    <div class=“card-body”>
-    <h4>Project 1 </h4>
-        <p class=“card-text”>lore ipsum30
+
+
+    <div class="row justify-content-between text-center mt-8">
+        <!--Project 1-->
+         <div class="col-lg-5 mx-auto mb-4">
+            <div class=“card”>
+                <img class="card-img-top" src="../Bootstrap-Portfolio/images/Project1.png"/>
+            <div class=“card-body”>
+                <h4>Project 1 </h4>
+                <p class=“card-text”>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam labore ut, reiciendis cupiditate hic quae accusamus voluptate aperiam ullam.</p>
+        </div>
+            <div class=“card-footer”>
+                <a href=“” class="btn btn-primary">Read more</a>
+        </div>
     </div>
-    <div class=“card-footer”>
-    <a href=“” class=“btn btw-primary”>lorem ipsum</a>
+</div>
+
+
+<!--Project 2-->
+<div class="col-lg-5 mx-auto mb-4">
+    <div class="card">
+        <img class="card-img-top" src="../Bootstrap-Portfolio/images/Project2.png"/>
+        <div class="card-body">
+            <h4>Project 2</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, alias?</p>
+        </div>
+        <div class="card-footer">
+            <a href="" class="btn btn-primary">Find out More.</a>
+        </div>
     </div>
 </div>
 </div>
 
-<class=“row justify-content-between text-centre mt-8”>
-    <div class=“col-lg-5 mx-auto mb-4”>
-        <div class=“card”>
-        <img src=“loremipsum.png” class=“”>
-    <div class=“card-body”>
-    <h4>Project 1 </h4>
-        <p class=“card-text”>lore ipsum30
-    </div>
-    <div class=“card-footer”>
-    <a href=“” class=“btn btw-primary”>lorem ipsum</a>
+<!--Project 3-->
+<div class="row d-flex justify-content-around mt-8">
+<div class="col-lg-5 mx-auto mb-4">
+    <div class="card">
+        <img class="card-img-top" src="../Bootstrap-Portfolio/images/Project3.png"/>
+        <div class="card-body">
+            <h4>Project 2</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, alias?</p>
+        </div>
+        <div class="card-footer">
+            <a href="" class="btn btn-primary">Find out More.</a>
+        </div>
     </div>
 </div>
 
+<!--Project 4-->
+    <div class="col-lg-5 mx-auto mb-4">
+        <div class="card">
+            <img class="card-img-top" src="../Bootstrap-Portfolio/images/Project4.png"/>
+            <div class="card-body">
+                <h4>Project 2</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, alias?</p>
+            </div>
+            <div class="card-footer">
+                <a href="" class="btn btn-primary">Find out More.</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--projects (this one is good)-->
+<section class="container" style="margin-top:20px">
+    <h2 class="my-4 text-center">My Work</h2>
+
+<div class="row">
+    <div class="col-md-7">
+        <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" style="width:700px" src="../Bootstrap-Portfolio/images/Project1.png">
+        </a>
+    </div>
+    <div class="col-md-5">
+        <h3>Project One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+
+        <a href="btn btn-primary" href="">View Project</a>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" style="width:700px" src="../Bootstrap-Portfolio/images/Project1.png">
+        </a>
+    </div>
+    <div class="col-md-5">
+        <h3>Project One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+
+        <a href="btn btn-primary" href="">View Project</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" style="width:700px" src="../Bootstrap-Portfolio/images/Project1.png">
+        </a>
+    </div>
+    <div class="col-md-5">
+        <h3>Project One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+
+        <a href="btn btn-primary" href="">View Project</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" style="width:700px" src="../Bootstrap-Portfolio/images/Project1.png">
+        </a>
+    </div>
+    <div class="col-md-5">
+        <h3>Project One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+
+        <a href="btn btn-primary" href="">View Project</a>
+    </div>
+</div>
 </section>
-
+<!--copy this-->
 
     <!--About me/ contact section-->
 
