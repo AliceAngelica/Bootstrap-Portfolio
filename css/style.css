@@ -20,7 +20,8 @@ header p {
 }
 
 header .jumbotron {
-    height: 735px;
+    height: 770px;
+    background-position: center;
 }
 
 h2 {
