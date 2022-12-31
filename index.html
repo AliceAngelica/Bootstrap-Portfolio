@@ -7,14 +7,13 @@
     <title>Bootstrap Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../Bootstrap-Portfolio/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Slabo+27px&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd8e817afe.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Nav bar, with links that send you to each part of the page-->
-    <section>
+    <section id="welcome">
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex">
-             <!--can put container here-->
              <div class="container">
               <a class="navbar-brand" href="#">My Portfolio</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,31 +22,34 @@
              <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Welcome <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#welcome">Welcome <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Skills</a>
+                  <a class="nav-link" href="#Skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Work</a>
+                  <a class="nav-link" href="#work">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
                </ul>
              </div>
              </div>
             </nav>
     </section>
 
-<!--Jumbotron, showing a picture of me, my name and other info-->
+<!--Jumbotron, showing a picture of me, my name and some text-->
 <header>
     <div class="jumbotron jumbotron-fluid" style="background-image: url(../Bootstrap-Portfolio/images/background.jpg); background-size: 100%;"><br>
 
-      <h1 class="col-lg-11 display-4 text-center text-white" id="title" style="margin-top:20px;"><br>Welcome to my Portfolio</h1><br>
+      <h1 class="col-lg-11 display-4 text-center text-secondary" id="title" style="margin-top:100px;"><br>Welcome to my Portfolio</h1><br>
       <p class="lead text-center text-white">&nbsp; Hello! My name is Alice and this is my Portfolio made with Bootstrap.<br> I hope you enjoy checking out my projects and getting to know me.</p><br>
       <p class="lead text-center text-white">
-         <a class="btn btn-light btn-lg" href="#" role="button">About Me</a>
+         <a class="btn btn-secondary btn-lg" href="#about" role="button">About Me</a>
       </p>
 </div>
 </header>
@@ -84,96 +86,91 @@
 </section>
 <br>
 <hr>-->
+<!--Skills Section - What I know-->
 <sectiom class="container">
-    <h2 class="my-4 text-center" id="mySkills">My Skills</h2><br>
+    <h2 class="my-4 text-center text-secondary" id="Skills">My Skills</h2><br>
 
     <div class="row">
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="../Bootstrap-Portfolio/images/html.png" width="140" height="140">
                         <rect width="100%" height="100%" fill="#777"></rect>
                     </svg>
-                    <h2>HTML</h2>
+                    <h3 class="text-secondary">HTML</h3>
                     <p>I have learned a lot of HTML, including semantic and non semantic HTML elements. I know how to use HTML to add structure to a page. I have also learned how to create form inputs and create tables.</p>           
-                    <p><a class="btn btn-secondary" href="#" role="button">Read More</a></p>
+                    <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/HTML" role="button">Read More</a></p>
                 </div>
         
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="images/css.png" height="140" width="140">
                         <rect width="100%" height="100%" fill="#777"></rect>
-                    <h2>CSS</h2>
+                    <h3 class="text-secondary">CSS</h3>
                     <p>I have learned a lot of CSS so far, for instance I have learned about the properties of the box-model, and its alternative (border-box). I know how to use CSS to add styles to a page. I have learned about classes and ids, and I have learned many types of selectors.
                         I have also learned how to use Flexbox which makes it easier to position elements. I have learned some CSS Grid and Bootstrap too, and I plan on continuously learning and improving my skills.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Read More</a></p>
+                    <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/CSS" role="button">Read More</a></p>
                 </div>
 
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="../Bootstrap-Portfolio/images/javascript.png"  width="140" height="140">
+                    <img class="rounded-circle" src="../Bootstrap-Portfolio/images/git.png"  width="190" height="140">
                         <rect width="100%" height="100%" fill="#777"></rect>
                     </svg>
-                    <h2>JavaScript</h2>
-                    <p>I will shortly be learning JavaSript, I currently do not have much knowledge of how to use JavaScript. I also plan on learning the popular framework "ReactJS".</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Read More</a></p>
+                    <h3 class="text-secondary">Git</h3>
+                    <p>Git is a version control system which tracks changes made to any file. It also allows you to collaborate with others on the same project. I have learned some git and I plan on continuing to expand my knowledge over time.</p>
+                    <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Git" role="button">Read More</a></p>
                 </div>
         </div>
      </div>
     </div>
 
-    <!--to learn-->
-    <h3 class="text-center" style="margin-top:50px;">What I plan to and expect to learn</h3>
+    <!--Skills section, what I want to learn-->
+    <h2 class="text-center text-secondary" style="margin-top:150px">What I plan to learn</h2>
     <div class="row row-cols-1 row-cols-md-3" style="margin-top:50px;">
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">JavaScript</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="card-body bg-secondary">
+              <h5 class="card-title text-white">JavaScript</h5>
+              <p class="card-text text-white">JavaScript is the most popular programming language in the world, it is used on most webpages. JavaScript helps programmers to create interactive web applications. I plan to start learning JavaScript very soon.</p>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">React.JS</h5>
-              <p class="card-text">This is a short card.</p>
+            <div class="card-body bg-secondary">
+              <h5 class="card-title text-white">ReactJS</h5>
+              <p class="card-text text-white">ReactJS is an open-source front-end javascript library. It is used for building interactive web applications quickly and more effectively whilst using less
+                lines of code than you would by just using JavaScript. I plan to learn ReactJS as it is a very widely used and known framework.
+              </p>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Node</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <i></i>
+            <div class="card-body bg-secondary">
+              <h5 class="card-title text-white">Jquery</h5>
+              <p class="card-text text-white">JQuery is a JavaScript library that is used to make writing JavaScript much easier. It simplifies using JavaScript by enabling you to write shorter lines of code. I plan to learn how to use JQuery very soon.</p>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">---</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <i></i>
+            <div class="card-body bg-secondary">
+              <h5 class="card-title text-white">NodeJs</h5>
+              <p class="card-text text-white">NodeJS is an open-source server enviornment that uses JavaScript, it is used for back-end web development. I plan on learning this in the future. </p>
             </div>
           </div>
         </div>
       </div>
 
 </section>
+
 <!---My Work in a grid, with each project image in a card. The card should include an image and short description-->
-          
-<section class="container">
-    <div class="row d-flex justify-content-around mt-8" style="margin-bottom:55px; margin-top:55px;">
-        <h2 class="my-4 text-center" style="margin-bottom:25px;">My Work</h2>
+<!--project 1-->
+<section class="container" id="work">
+<div class="row d-flex justify-content-around mt-8" style="margin-bottom:55px; margin-top:55px;">
+    <h2 class="my-4 text-center text-secondary" style="margin-bottom:25px;">My Work</h2>
     </div>
-
-
     <div class="row justify-content-between text-center mt-8">
-        
-
-    <!--projects (this one is good)-->
-<section class="container"
-    <h2 class="my-4 text-center">My Work</h2>
 
 <div class="row">
     <div class="col-md-7">
@@ -182,61 +179,71 @@
         </a>
     </div>
     <div class="col-md-5">
-        <br><h3>Project One</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+        <br><h3 class="text-secondary">Project One - A Coding Refactor of the Horiseon front page</h3>
+        <p class="text-left">Horiseon is a marketing website. The code was refactored in order to improve the accessibility and readability of the code.<br>
+            The aim of the project was to refactor the code of the Horiseon Marketing website without interfering with the styling of the page. The refactor aimed to increase the accessibility of the page for those with a disability, and to improve the readability of the code.
+            To increase the accessibility of the code non-semantic HTML (such as div tags) were replaced with semantic HTML elements, this enables individuals using a screen reader (or other equipment) to navigate through the various sections of the page without difficulty.
+            Images were also provided with descriptions. To improve the readability of the code, much of the unnecessary and repetitive CSS selectors were removed whilst maintaining the original design. Comments were also included throughout the HTML and CSS documents, making the code easier to understand.</p>
 
-        <a href="btn btn-primary" href="">View Project</a>
+        <a class="btn btn-secondary" href="https://github.com/AliceAngelica/coding-refactor" id="projectBtn">View Project</a>
     </div>
 </div>
 </div>
 
+<!--Project 2-->
 <div class="row">
     <div class="col-md-7" style="margin-top:50px;">
         <a href="#">
             <img class="img-fluid rounded mb-3 mb-md-0" style="width:700px" src="../Bootstrap-Portfolio/images/Project2.png">
         </a>
     </div>
+    
     <div class="col-md-5">
-        <br><h3>Project One</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+        <br><h3 class="text-secondary">Project 2 - My First Portfolio</h3>
+        <p>I made my very first portfolio from scratch. I first planned how it would look by creating a wireframe and I then recreated the template. The portfolio had several sections including a navigation bar, a welcome section, an about me section, a work section, and a footer.<br>
+        The portfolio's use was to display all of my projects in one place while continuing to update the portfolio each time that I create or amend a previous project. It could also show my progress as I become more experienced with Web Development and coding. It allows me to showcase my current skills, and will enable me to track my growth throughout time. An additional benefit of a porfolio is that others can view my work and find out about me and my work.</p>
 
-        <a href="btn btn-primary" href="">View Project</a>
+        <a class="btn btn-secondary" href="https://github.com/AliceAngelica/first-portfolio">View Project</a>
     </div>
 </div>
 
+<!--Project 3-->
 <div class="row">
     <div class="col-md-7" style="margin-top:50px;">
-        <a href="#">
+        <a href="">
             <img class="img-fluid rounded mb-3 mb-md-0" style="width:700px" src="https://placehold.co/600x400">
         </a>
     </div>
     <div class="col-md-5">
-        <br><h3>Project One</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+        <br><h3 class="text-secondary">Project 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste repellat quis! Animi repudiandae nesciunt quibusdam reiciendis debitis accusantium voluptates fugiat nulla fugit itaque, ut, voluptatum nam impedit laborum facilis?</p>
 
-        <a href="btn btn-primary" href="">View Project</a>
+        <a class="btn btn-secondary" href="">View Project</a>
     </div>
 </div>
+<!--Project 4-->
 
 <div class="row">
-    <div class="col-md-7" style="margin-top:50px;">
-        <a href="#">
+    <div class="col-md-7" style="margin-top:70px">
+        <a href="">
             <img class="img-fluid rounded mb-3 mb-md-0" style="width:700px" src="https://placehold.co/600x400">
         </a>
     </div>
     <div class="col-md-5">
-        <br><h3>Project One</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur magni, maxime recusandae consequatur illum aperiam omnis libero? Voluptatibus, error.</p>
+        <br><h3 class="text-secondary">Project 4</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, culpa rem modi, ducimus fugit atque cumque ut aspernatur maiores ullam dicta consectetur sint sit possimus, inventore error. Obcaecati repellat laboriosam vel vero debitis, nam eos!<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste repellat quis! Animi repudiandae nesciunt quibusdam reiciendis debitis accusantium voluptates fugiat nulla fugit itaque, ut, voluptatum nam impedit laborum facilis?</p>
 
-        <a href="btn btn-primary" href="">View Project</a>
+        <a class="btn btn-secondary" href="">View Project</a>
     </div>
+</div>
 </div>
 </section>
 <!--copy this-->
 
     <!--About me/ contact section-->
     <section>
-        <div class="container bg-secondary" style="margin-top:30px;">
+        <div class="container bg-secondary" id="about" style="margin-top:30px;">
             <div class="row align-items-center">
                 <div class="col-lg-5 order-lg-2">
                     <img class="img-fluid rounded-circle" src="../Bootstrap-Portfolio/images/me.jpeg">
@@ -244,12 +251,12 @@
 
                 <div class="col-lg-7 order-lg-1 text-white">
                     <div class="p-5">
-                        <h2 class="display-4">About Me</h2>
+                        <h3 class="display-4 text-white">About Me</h2>
                         <p>Hello, My name is Alice. I was born in London and lived there most of my life (until recently.)<br>
-                        I studied IT in college, and have an Honors degree in Psychology and I have recently discovered coding which I find exciting!<br>
+                        I studied IT in college, and have an Honors degree in Psychology. I have recently discovered coding which I find exciting! I am aiming to become a web developer.<br>
                         In my free time I love to bake and cook, I also love reading, watching documentaries, and travelling. </p>
-                        <a href="" class="btn btn-outline-light">
-                        <i class="fa-solid fa-arrow-up"> Scroll Up</i>
+                        <a href="#welcome" class="btn btn-outline-light">Scroll Up
+                        <i class="fa-solid fa-arrow-up"></i>
                         </a>
                     </div>
                 </div>
@@ -262,23 +269,24 @@
 
     <!--Footer with hyperlinks, each should have a hover effect. Links to social media-->
 
-<footer class="footer bg-light">
+<footer class="footer bg-light" id="contact" style="margin-top:50px">
     <div class="container">
         <div class="row">
         <div class="col-lg-6 h-100 text-center mx-auto">
-            <ul class="list-inline mb-0">
-                <li class="list-inline-item mr-3">
-                    <a href="#">
+            <p>Find me on social media and GitHub!</p>
+            <ul class="list-inline mb-0" id="footerUl">
+                <li class="list-inline-item mr-3">LinkedIn
+                    <a href="https://www.linkedin.com/feed/">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
-                <li class="list-inline-item mr-3">
-                    <a href="#">
+                <li class="list-inline-item mr-3">GitHub
+                    <a href="https://github.com/">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
-                <li class="list-inline-item mr-3">
-                    <a href="#">
+                <li class="list-inline-item mr-3">Twitter
+                    <a href="https://twitter.com/home">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </li>

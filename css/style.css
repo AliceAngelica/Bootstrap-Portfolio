@@ -1,11 +1,37 @@
+/* Body */
+
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgba(253, 253, 253, 0.975);
+
 }
+
+/* Type/element selectors */
+h2, h3 {
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-family: 'Slabo 27px', serif;
+
+}
+
+ul li {
+    list-style-type: none;
+    width: 50%;
+}
+
+/* Nav Bar */
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end!important;
     flex-basis: auto;
     }
+
+/* Header section/ Includes title and Jumbotron */
+
+header .jumbotron {
+    height: 1000px;
+    background-position: center;
+}
 
 header #title {
     width: 65%;
@@ -19,49 +45,17 @@ header p {
     width: 65%;
 }
 
-header .jumbotron {
-    height: 770px;
-    background-position: center;
+/* Work Section */
+
+#projectBtn {
+    margin-right: 350px;
 }
 
-h2 {
-    margin-top: 80px;
-    text-decoration: 2px solid grey overline;
-    text-transform: uppercase;
-}
+/* Footer */
 
-.skills {
-    font-weight: bold;
-    text-decoration: 2px solid grey underline;
-}
-
-.skillsInfo {
-margin-left: 40px;
-}
-
-.skillsInfo::first-letter {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-ul li {
-    list-style-type: none;
-    width: 50%;
-}
-
-.progress {
-    margin-left: 30px;
-    width: 100%;
-    float: right;
-}
-
-.containerSkills {
-    align-content: center;
-    border: 2px solid black;
-}
-
-#progressContainer {
-    border: 2px solid black;
-    width: 550px;
-    height: 60px;
+#footerUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
 }
