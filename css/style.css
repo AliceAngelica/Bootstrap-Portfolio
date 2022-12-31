@@ -9,8 +9,11 @@ body {
 /* Type/element selectors */
 h2, h3 {
     margin-top: 80px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: 'Slabo 27px', serif;
+    font-weight: 700;
+    text-decoration: underline;
+    letter-spacing: 1px;
 
 }
 
@@ -24,12 +27,19 @@ ul li {
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end!important;
     flex-basis: auto;
-    }
+}
+
+.nav-link:hover {
+        text-decoration: 4px grey underline;
+        transform: translateY(-1.80px);
+        transition: all 0.5s;
+        color: black;
+}
 
 /* Header section/ Includes title and Jumbotron */
 
 header .jumbotron {
-    height: 1000px;
+    height: 843px;
     background-position: center;
 }
 
@@ -45,10 +55,67 @@ header p {
     width: 65%;
 }
 
+#jumbotronButton {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#jumbotronButton:hover {
+    transform: translateY(-1.80px);
+    transition: all 1s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Skills section */
+
+.buttonSkills {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.buttonSkills:hover {
+    transform: translateY(-1.80px);
+    transition: all 1s;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.rounded-circle:hover {
+    transform: scale(-10px);
+    border: 4px solid grey;
+    transition: all 1s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body:hover {
+    transform:scale(1.1);
+    transition: all 1.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /* Work Section */
 
 #projectBtn {
     margin-right: 350px;
+}
+
+.buttonWork {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.buttonWork:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.img-fluid:hover {
+    border: 4px solid grey;
+    transform: scale(0.9);
+    transition: all 3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Footer */
