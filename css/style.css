@@ -30,10 +30,10 @@ ul li {
 }
 
 .nav-link:hover {
-        text-decoration: 4px grey underline;
-        transform: translateY(-1.80px);
-        transition: all 0.5s;
-        color: black;
+    text-decoration: 4px grey underline;
+    transform: translateY(-1.80px);
+    transition: all 0.5s;
+    color: black;
 }
 
 /* Header section/ Includes title and Jumbotron */
@@ -125,4 +125,25 @@ header p {
     flex-direction: row;
     justify-content: space-evenly;
     
+}
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .jumbotron header {
+    height: 500px;
+    
+}
+  
+@media screen and (max-width: 768px) {
+#title h1 {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.card-body {
+    width: 215px;
+    height: 200px;
+    overflow: scroll;
+    font-size: 15px;
 }
